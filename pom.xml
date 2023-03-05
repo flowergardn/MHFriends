@@ -108,6 +108,10 @@
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
+        <repository>
+            <id>skriptlang</id>
+            <url>https://repo.skriptlang.org/releases</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -142,6 +146,12 @@
             <groupId>com.github.honkling</groupId>
             <artifactId>commando</artifactId>
             <version>542af0df7b</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.SkriptLang</groupId>
+            <artifactId>Skript</artifactId>
+            <version>2.6.3</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
