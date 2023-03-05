@@ -1,0 +1,6 @@
+name: MinehutFriends
+version: '${project.version}'
+main: sh.astrid.minehutfriends.MinehutFriends
+api-version: 1.19
+authors: [ astrid ]
+description: A plugin to award players for inviting friends
