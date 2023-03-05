@@ -14,19 +14,19 @@ class PlayerJoin : org.bukkit.event.Listener {
 
     private val friendManager = MinehutFriends.getFriendManager()
 
-    @EventHandler
-    fun onJoin(event: PlayerJoinEvent) {
+    private fun fetch() {
         Bukkit.getOnlinePlayers().forEach {
             friendManager.fetchFriends(it.uniqueId)
         }
     }
 
     @EventHandler
+    fun onJoin(event: PlayerJoinEvent) {
+        fetch()
+    }
+
+    @EventHandler
     fun onLeave(event: PlayerQuitEvent) {
-        delay({
-            Bukkit.getOnlinePlayers().forEach {
-                friendManager.fetchFriends(it.uniqueId)
-            }
-        }, 30)
+        delay({ fetch() }, 30)
     }
 }
