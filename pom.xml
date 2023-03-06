@@ -5,11 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>sh.astrid</groupId>
-    <artifactId>MinehutFriends</artifactId>
+    <artifactId>MHFriends</artifactId>
     <version>1.0.1-BETA</version>
     <packaging>jar</packaging>
 
     <name>MHFriends</name>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/octocat/hello-world</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
@@ -21,6 +29,7 @@
     </properties>
 
     <build>
+        <finalName>MHFriends</finalName>
         <sourceDirectory>src/main/kotlin</sourceDirectory>
         <plugins>
             <plugin>
@@ -145,7 +154,7 @@
         <dependency>
             <groupId>com.github.honkling</groupId>
             <artifactId>commando</artifactId>
-            <version>542af0df7b</version>
+            <version>0470c1a15f</version>
         </dependency>
         <dependency>
             <groupId>com.github.SkriptLang</groupId>

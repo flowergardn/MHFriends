@@ -1,4 +1,4 @@
-package sh.astrid.minehutfriends
+package sh.astrid.mhfriends
 
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.SerialName

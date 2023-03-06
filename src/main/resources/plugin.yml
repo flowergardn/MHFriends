@@ -1,7 +1,7 @@
-name: MinehutFriends
+name: MHFriends
 version: '${project.version}'
-main: sh.astrid.minehutfriends.MinehutFriends
+main: sh.astrid.mhfriends.MHFriends
 api-version: 1.19
 authors: [ astrid ]
 softdepend: [ Skript ]
-description: A plugin to award players for inviting friends
+description: An API to manage online Minehut friends.

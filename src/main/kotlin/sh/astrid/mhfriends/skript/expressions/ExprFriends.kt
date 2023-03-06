@@ -1,4 +1,4 @@
-package sh.astrid.minehutfriends.skript.expressions
+package sh.astrid.mhfriends.skript.expressions
 
 import ch.njol.skript.Skript
 import ch.njol.skript.lang.Expression
@@ -8,8 +8,8 @@ import ch.njol.skript.lang.util.SimpleExpression
 import ch.njol.util.Kleenean
 import org.bukkit.entity.Player
 import org.bukkit.event.Event
-import sh.astrid.minehutfriends.FriendManager.FriendsResponse.Friend
-import sh.astrid.minehutfriends.MinehutFriends
+import sh.astrid.mhfriends.FriendManager.FriendsResponse.Friend
+import sh.astrid.mhfriends.MHFriends
 
 class ExprFriends : SimpleExpression<Friend>() {
     companion object {
@@ -36,7 +36,7 @@ class ExprFriends : SimpleExpression<Friend>() {
     }
 
     override fun get(e: Event): Array<Friend> {
-        val friendManager = MinehutFriends.getFriendManager()
+        val friendManager = MHFriends.getFriendManager()
         val player = playerExpr.getSingle(e)!!.uniqueId
         val friends = friendManager.getFriends(player)
 

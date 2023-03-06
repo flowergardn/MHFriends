@@ -1,18 +1,18 @@
-package sh.astrid.minehutfriends.events
+package sh.astrid.mhfriends.events
 
 import me.aroze.arozeutils.minecraft.generic.delay
 import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.player.PlayerJoinEvent
 import org.bukkit.event.player.PlayerQuitEvent
-import sh.astrid.minehutfriends.MinehutFriends
+import sh.astrid.mhfriends.MHFriends
 
 class PlayerJoin : org.bukkit.event.Listener {
     init {
-        MinehutFriends.getInstance().server.pluginManager.registerEvents(this, MinehutFriends.getInstance())
+        MHFriends.getInstance().server.pluginManager.registerEvents(this, MHFriends.getInstance())
     }
 
-    private val friendManager = MinehutFriends.getFriendManager()
+    private val friendManager = MHFriends.getFriendManager()
 
     private fun fetch() {
         Bukkit.getOnlinePlayers().forEach {
