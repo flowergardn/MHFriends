@@ -14,5 +14,5 @@ fun mhinfo(executor: Player) {
     val info = MHFriends.getInstance().description
 
     executor.sendMessage("&s${info.name}&p | version &s${info.version}".coloured())
-    executor.sendMessage("An API to manage online Minehut friends.".coloured())
+    executor.sendMessage("&pAn API to manage online Minehut friends.".coloured())
 }
