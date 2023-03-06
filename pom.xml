@@ -14,7 +14,7 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub Packages</name>
+            <name>GitHub astridlol Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/astridlol/MHFriends</url>
         </repository>
     </distributionManagement>
