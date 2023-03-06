@@ -1,6 +1,7 @@
-package sh.astrid.minehutfriends;
+package sh.astrid.minehutfriends
 
 import ch.njol.skript.Skript
+import ch.njol.skript.SkriptAddon
 import me.aroze.arozeutils.minecraft.FancyPlugin
 import me.honkling.commando.CommandManager
 import org.bukkit.Bukkit
